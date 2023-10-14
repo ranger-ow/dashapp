@@ -44,7 +44,7 @@ export default function LoginForm() {
         <div className="w-24 h-24 justify-center items-center">
           <h1 className="text-white font-bold mt-14 lg:ml-0 sm:ml-8 lg:text-5xl md:text-3xl sm:text-2xl ">Board.</h1>
         </div>
-        <div className="lg:w-fit h-auto sm:w-10 sm:min-h-4  flex lg:flex-row sm:flex-col md:flex-col mt-24 justify-centre ml-24 sm:ml-8 lg:gap-4 sm:gap-2 items-center">
+        <div className="lg:w-fit lg:h-auto sm:w-10 sm:min-h-4 flex lg:flex-row md:flex-col sm:flex-col mt-24 justify-centre ml-24 sm:ml-8 lg:gap-4 sm:gap-2 items-center">
         <img  className="w-14 h-14  ml-0 rounded-full" src="github.png" alt="" ></img>
         <img  className="w-14 h-14 ml-0 rounded-full" src="twitter.png" alt="" ></img>
         <img  className="w-14 h-14 ml-0 rounded-full" src="linkedin.png" alt="" ></img>

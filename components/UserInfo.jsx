@@ -17,15 +17,15 @@ export default function UserInfo({show,setShow}) {
 
   return (
 
-    <div className=" min-h-screen lg:w-[79vw] md:w-[60vw] sm:w-[40vw] ml-80 flex lg:flex-col  object-fill  ">
+    <div className=" min-h-screen lg:w-[79vw] md:w-[60vw] sm:w-[40vw] ml-80 flex lg:flex-col md:flex-col sm:flex-col  object-fill  ">
       <div className=" flex flex-row mt-10 justify-between ">
-        <h4 className="text-black w-fitrounded-xl mx-auto text-center font-semibold lg:ml-14 sm:ml-4 my-auto lg:text-2xl sm:text-sm">{session?.user?.name}'s Dashboard</h4>
+        <h4 className="text-black w-fit rounded-xl mx-auto text-center font-semibold lg:ml-14 sm:ml-4 my-auto lg:text-2xl sm:text-sm">{session?.user?.name}'s Dashboard</h4>
         
         <div className="flex flex-row gap-3">
           <input className="lg:w-fit sm:w-24 h-8 my-auto rounded-xl border-black" type="text" placeholder="search" />
-          <button className="rounded-full w-8 h-8 mt-1  bg-blue-600 text-white text-2xl text-centre" onClick={() => {setShow(!show)}}>+</button>
+          <button className="rounded-full w-8 h-8 sm:my-auto mt-1  bg-blue-600 text-white text-2xl text-centre" onClick={() => {setShow(!show)}}>+</button>
           <img className="w-6 h-6 rounded-full my-auto" src="notification.png"></img>
-          <img className="w-10 h-10 rounded-full mr-4" src="profile.png" onClick={() => { signOut() }}></img>
+          <img className="w-10 h-10 rounded-full sm:my-auto mr-4" src="profile.png" onClick={() => { signOut() }}></img>
 
         </div>
       </div>
